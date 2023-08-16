@@ -3,7 +3,7 @@ let currentIndex = 0;
 
 function autoplay() {
     setInterval(() => {
-        carousel.style.transform =  `translateX(${(currentIndex * (-33.3))}%)`
+        carousel.style.transform =  `translateX(${(currentIndex * (-(100 / carousel.children.length)))}%)`
         currentIndex++
         if (currentIndex >= (carousel.children.length)){
             currentIndex = 0
